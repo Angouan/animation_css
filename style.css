@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins' ,sans serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.anime{
+    width: 550px;
+    height: 550px;
+    background-color:green;
+    animation: bord  1.7s alternate-reverse infinite;
+    animation-timing-function: ease-out;
+
+}
+ 
+@keyframes bord {
+    0%{
+        transform: scale(.3);
+        border-radius: 100%;
+    
+    }
+
+     25%{
+        background-color:rgb(163, 238, 51);
+    
+    }
+    50%{
+        background-color:orange;
+    }     
+    75%{
+        color:orangered;
+    }
+    100%{
+        transform: scale(1);
+        background-color:red;
+    } 
+} 
+
